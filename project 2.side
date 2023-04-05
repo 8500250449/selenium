@@ -1,0 +1,367 @@
+{
+  "id": "366ea867-c099-4e34-b81a-4dc210c8ad31",
+  "version": "2.0",
+  "name": "project 2",
+  "url": "https://letcode.in/alert",
+  "tests": [{
+    "id": "276b37c1-00aa-43b5-8b7a-ee8c3034fd58",
+    "name": "Test1",
+    "commands": [{
+      "id": "57146fd4-f47e-42b4-94c5-dd6aae147416",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.opencart.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c2b4f599-7efd-4072-adcf-019c6f9117a1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x776",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e3ce8581-2b1a-4682-af28-6e44cfad7541",
+      "comment": "",
+      "command": "click",
+      "target": "css=.show > .d-none",
+      "targets": [
+        ["css=.show > .d-none", "css:finder"],
+        ["xpath=//nav[@id='top']/div[2]/div[2]/ul/li[2]/div/a/span", "xpath:idRelative"],
+        ["xpath=//li[2]/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'My Account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "09564772-52ad-4370-a710-8828073810cf",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.dropdown-menu-right > li:nth-child(2) > .dropdown-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//nav[@id='top']/div[2]/div[2]/ul/li[2]/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://demo.opencart.com/index.php?route=account/login&language=en-gb')]", "xpath:href"],
+        ["xpath=//li[2]/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9aee00e-02cb-4f55-aee4-e27ac601f47c",
+      "comment": "",
+      "command": "click",
+      "target": "id=input-email",
+      "targets": [
+        ["id=input-email", "id"],
+        ["name=email", "name"],
+        ["css=#input-email", "css:finder"],
+        ["xpath=//input[@id='input-email']", "xpath:attributes"],
+        ["xpath=//form[@id='form-login']/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "63dc9ff0-c587-4ca1-9301-11f9b116de92",
+      "comment": "",
+      "command": "store",
+      "target": "abcd@gmail.com",
+      "targets": [],
+      "value": "mail"
+    }, {
+      "id": "f9da27a2-789a-48b1-b504-55f5683430d8",
+      "comment": "",
+      "command": "type",
+      "target": "id=input-email",
+      "targets": [
+        ["id=input-email", "id"],
+        ["name=email", "name"],
+        ["css=#input-email", "css:finder"],
+        ["xpath=//input[@id='input-email']", "xpath:attributes"],
+        ["xpath=//form[@id='form-login']/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "$(mail)"
+    }, {
+      "id": "e17fc296-7e51-4e12-a615-e2475cada97b",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.mb-3:nth-child(3) > .col-form-label",
+      "targets": [
+        ["css=.mb-3:nth-child(3) > .col-form-label", "css:finder"],
+        ["xpath=//form[@id='form-login']/div/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'E-Mail Address')]", "xpath:innerText"]
+      ],
+      "value": "var"
+    }, {
+      "id": "8c7966c4-4bf1-41d0-8514-8c380439d2fa",
+      "comment": "",
+      "command": "echo",
+      "target": "${var}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8acafdee-db4c-456d-b7dd-3ec45e503a30",
+      "comment": "",
+      "command": "click",
+      "target": "id=input-password",
+      "targets": [
+        ["id=input-password", "id"],
+        ["name=password", "name"],
+        ["css=#input-password", "css:finder"],
+        ["xpath=//input[@id='input-password']", "xpath:attributes"],
+        ["xpath=//form[@id='form-login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "068cd258-c7f0-47a1-95d2-728c179a1f05",
+      "comment": "",
+      "command": "click",
+      "target": "id=input-password",
+      "targets": [
+        ["id=input-password", "id"],
+        ["name=password", "name"],
+        ["css=#input-password", "css:finder"],
+        ["xpath=//input[@id='input-password']", "xpath:attributes"],
+        ["xpath=//form[@id='form-login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0313592f-0f95-46ec-8921-37095bb1c385",
+      "comment": "",
+      "command": "type",
+      "target": "id=input-password",
+      "targets": [
+        ["id=input-password", "id"],
+        ["name=password", "name"],
+        ["css=#input-password", "css:finder"],
+        ["xpath=//input[@id='input-password']", "xpath:attributes"],
+        ["xpath=//form[@id='form-login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "abcd@6155"
+    }, {
+      "id": "107ea8e6-5997-4c35-8777-91f900e13429",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(5)",
+      "targets": [
+        ["css=.btn:nth-child(5)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='form-login']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0dda1dfe-3e06-4ec9-9303-bab90d7b1444",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=input-password",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "38681747-0b8d-4641-a777-40f807f1a6d4",
+    "name": "Test2",
+    "commands": [{
+      "id": "a433b827-978b-4393-b9a8-9b3d2405863d",
+      "comment": "",
+      "command": "open",
+      "target": "https://mail.rediff.com/cgi-bin/login.cgi",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ce3ec82f-94e2-44a3-84ae-f0a2f58296a5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x776",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c619cf12-abb1-4ff4-bd2d-f64573510dfe",
+      "comment": "",
+      "command": "click",
+      "target": "name=proceed",
+      "targets": [
+        ["name=proceed", "name"],
+        ["css=.signinbtn", "css:finder"],
+        ["xpath=//input[@name='proceed']", "xpath:attributes"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4fb36066-8ff8-48f5-94f7-69f74e27d146",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Please enter a valid user name",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "4277dc24-2318-4b00-9573-79db7c2d9e19",
+    "name": "Test3",
+    "commands": [{
+      "id": "4bbe8179-f355-4fb8-821f-946328413f98",
+      "comment": "",
+      "command": "open",
+      "target": "https://letcode.in/alert",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "38f90314-42b6-4074-85b8-57ede8157152",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x776",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fdc7a125-9d35-435d-906a-53db8119a332",
+      "comment": "",
+      "command": "click",
+      "target": "id=accept",
+      "targets": [
+        ["id=accept", "id"],
+        ["css=#accept", "css:finder"],
+        ["xpath=//button[@id='accept']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Simple Alert')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f48fbc6a-87bd-4ffe-958e-bbf7d0999061",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Hey! Welcome to LetCode",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d0920a6-4a45-4b54-866c-92e8db362ef1",
+      "comment": "",
+      "command": "chooseCancelOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "19157c9c-7042-4193-80a4-b7cf648cb9c3",
+      "comment": "",
+      "command": "click",
+      "target": "id=confirm",
+      "targets": [
+        ["id=confirm", "id"],
+        ["css=#confirm", "css:finder"],
+        ["xpath=//button[@id='confirm']", "xpath:attributes"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Confirm Alert')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "73cf1f4f-c8c7-4548-b807-20ec2221ac3b",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "Are you happy with LetCode?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "998bd509-ce08-4eb4-8987-f1ebd7828ec1",
+      "comment": "",
+      "command": "webdriverChooseCancelOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "32803651-153d-4791-b324-930af8cce718",
+      "comment": "",
+      "command": "answerOnNextPrompt",
+      "target": "Divya",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f2985ede-13d1-4a58-a9d5-9b6d68653353",
+      "comment": "",
+      "command": "click",
+      "target": "id=prompt",
+      "targets": [
+        ["id=prompt", "id"],
+        ["css=#prompt", "css:finder"],
+        ["xpath=//button[@id='prompt']", "xpath:attributes"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Prompt Alert')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a95d380-6d29-4747-aa36-eecc2eaa0ed5",
+      "comment": "",
+      "command": "assertPrompt",
+      "target": "Enter your name",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fd029922-b5df-40b4-a32b-5203a57aa6f1",
+      "comment": "",
+      "command": "webdriverAnswerOnVisiblePrompt",
+      "target": "Divya",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ff46a799-e157-43d8-b1c8-7aec4b4c0593",
+      "comment": "",
+      "command": "click",
+      "target": "id=modern",
+      "targets": [
+        ["id=modern", "id"],
+        ["css=#modern", "css:finder"],
+        ["xpath=//button[@id='modern']", "xpath:attributes"],
+        ["xpath=//div[4]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Modern Alert')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b426eac-fff4-4b4f-b39e-a37ad64ac44b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=confirm",
+      "targets": [
+        ["id=confirm", "id"],
+        ["css=#confirm", "css:finder"],
+        ["xpath=//button[@id='confirm']", "xpath:attributes"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Confirm Alert')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c496b84-7455-4e9d-991f-0a2f93fb6989",
+      "comment": "",
+      "command": "click",
+      "target": "id=modern",
+      "targets": [
+        ["id=modern", "id"],
+        ["css=#modern", "css:finder"],
+        ["xpath=//button[@id='modern']", "xpath:attributes"],
+        ["xpath=//div[4]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Modern Alert')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "07262873-9a7d-45c3-be91-971e0fb3d40a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8909558d-0a0b-4589-a9d5-4d287672b2ea",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["276b37c1-00aa-43b5-8b7a-ee8c3034fd58"]
+  }],
+  "urls": ["https://mail.rediff.com/cgi-bin/login.cgi", "https://letcode.in/alert"],
+  "plugins": []
+}
